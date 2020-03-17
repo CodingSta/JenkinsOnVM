@@ -7,7 +7,7 @@
       inputs:
         versionSpec: '12.x'
       displayName: 'Install Node.js'
-    - script: |
+    - script:
         npm install
         npm run build --if-present
         npm run test --if-present
