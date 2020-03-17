@@ -16,12 +16,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    sudo apt-get update
-    sudo apt-get upgrade
-    sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    sudo apt-get update
-    sudo npm install -g  --save express-generator 
-    sudo npm install
+    npm install
     npm run build
   displayName: 'npm install and build'
