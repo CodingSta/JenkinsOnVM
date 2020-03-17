@@ -4,7 +4,7 @@ const app = express();
 var server = http.createServer(app);
 
 app.get('/', function(req, res){
-    res.send('root page!');
+    res.send('mingyu page!');
 });
 
 app.get('/start', function(req, res){
