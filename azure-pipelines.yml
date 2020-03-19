@@ -18,10 +18,4 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs: 
     pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'node index.js'
-    failOnStderr: true
     
