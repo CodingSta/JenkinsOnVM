@@ -16,11 +16,6 @@ steps:
     npm run test --if-present
   displayName: 'npm install, build and test'
 
-- task: CopyFiles@2
-  inputs:
-    Contents: '**' ## update to match what you want to copy
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-
 - task: PublishBuildArtifacts@1
   inputs: 
     pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
